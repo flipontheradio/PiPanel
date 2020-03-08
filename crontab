@@ -1,0 +1,30 @@
+#reboot
+0 2 * * * sudo reboot
+
+#Monday
+30 5 * * 1  echo 'sudo sh -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+30 22 * * 1  echo 'sudo sh -c "echo 1 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+
+#Tuesday
+30 5 * * 2  echo 'sudo sh -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+30 22 * * 2  echo 'sudo sh -c "echo 1 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+
+#Wednesday
+30 5 * * 3  echo 'sudo sh -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+30 22 * * 3  echo 'sudo sh -c "echo 1 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+
+#Thursday
+30 5 * * 4  echo 'sudo sh -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+30 22 * * 4  echo 'sudo sh -c "echo 1 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+
+#Friday
+30 5 * * 5  echo 'sudo sh -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+30 22 * * 5  echo 'sudo sh -c "echo 1 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+
+#Saturday
+0 8 * * 6  echo 'sudo sh -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+30 22 * * 6  echo 'sudo sh -c "echo 1 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+
+#Sunday
+0 8 * * 7  echo 'sudo sh -c "echo 0 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
+30 22 * * 7  echo 'sudo sh -c "echo 1 > /sys/class/backlight/rpi_backlight/bl_power"' > /home/pi/Documents/backlightStatus.txt
